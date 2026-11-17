@@ -1,0 +1,20 @@
+#Day 14 - Student Management System
+class Student:
+    def __init__(self, student_id, name, age, major):
+        self.student_id = student_id
+        self.name = name
+        self.age = age
+        self.major = major
+
+    def show_info(self):
+            print(f"===== {self.name}'s INFO ")
+            print(f"Student ID : {self.student_id}")
+            print(f"Name : {self.name}")
+            print(f"Age: {self.age}")
+            print(f"Major: {self.major}")
+
+student1 = Student("ICST-20","ZARNI", 20, "CST" )
+student2 = Student("ICST-58", "Min Thukha", 20, "CST")        
+
+student1.show_info()
+student2.show_info()
